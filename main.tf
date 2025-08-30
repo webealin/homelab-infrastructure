@@ -1,7 +1,7 @@
 # main.tf
 
 data "local_file" "ssh_public_key" {
-  filename = "keys/fido_gpg2.pub"
+  filename = pathexpand("~/.ssh/fido_gpg2.pub")
 }
 
 locals {
