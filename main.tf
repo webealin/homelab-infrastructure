@@ -29,15 +29,15 @@ module "debian_13_template" {
   source = "./modules/debian-13-vm"
 
   # template specific flags
-  is_template               = true
-  create_cloud_image        = true
-  create_user_data          = true
+  is_template        = true
+  create_cloud_image = true
+  create_user_data   = true
 
   # template specific config
-  vm_name                   = "debian-13-template"
-  cpu_cores                 = 2
-  memory                    = 2048
-  disk_size                 = 10
+  vm_name   = "debian-13-template"
+  cpu_cores = 2
+  memory    = 2048
+  disk_size = 10
 
   # common config
   pve_host                  = local.common_config.pve_host
@@ -67,11 +67,11 @@ module "debian_13_vm" {
   user_data_file_id = module.debian_13_template.user_data_file_id
 
   # VM specific config
-  vm_name         = each.key
-  ip_address      = each.value.ip_address
-  cpu_cores       = each.value.cpu_cores
-  memory          = each.value.memory
-  data_disk_size  = each.value.data_disk_size
+  vm_name        = each.key
+  ip_address     = each.value.ip_address
+  cpu_cores      = each.value.cpu_cores
+  memory         = each.value.memory
+  data_disk_size = each.value.data_disk_size
 
   # common config
   pve_host                  = local.common_config.pve_host

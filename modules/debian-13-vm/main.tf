@@ -22,7 +22,7 @@ resource "proxmox_virtual_environment_file" "user_data_config" {
   node_name    = var.pve_host
 
   source_raw {
-    data      = templatefile("${path.module}/resources/cloud-init/debian_13_user_data.yml.tpl", {
+    data = templatefile("${path.module}/resources/cloud-init/debian_13_user_data.yml.tpl", {
       domain                    = var.domain,
       timezone                  = var.timezone,
       locale                    = var.locale,
@@ -71,7 +71,7 @@ resource "proxmox_virtual_environment_vm" "debian_13_vm" {
   }
 
   # this is either a template or a clone
-  dynamic clone {
+  dynamic "clone" {
     for_each = var.template_vm_id != null ? [1] : []
     content {
       vm_id = var.template_vm_id
