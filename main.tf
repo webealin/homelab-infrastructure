@@ -33,7 +33,7 @@ module "debian_13_template" {
   create_cloud_image        = true
   create_user_data          = true
 
-  # template specific config  
+  # template specific config
   vm_name                   = "debian-13-template"
   cpu_cores                 = 2
   memory                    = 2048

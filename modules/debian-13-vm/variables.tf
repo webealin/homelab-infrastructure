@@ -84,7 +84,7 @@ variable "data_datastore_id" {
   type        = string
   default     = null
 }
- 
+
 # Globals
 variable "domain" {
   description = "Domain name"
