@@ -87,6 +87,6 @@ No resources.
 
 | Name | Description |
 |------|-------------|
-| <a name="output_debian_13_template_outputs"></a> [debian\_13\_template\_outputs](#output\_debian\_13\_template\_outputs) | n/a |
-| <a name="output_debian_13_vm_outputs"></a> [debian\_13\_vm\_outputs](#output\_debian\_13\_vm\_outputs) | n/a |
+| <a name="output_debian_13_template_outputs"></a> [debian\_13\_template\_outputs](#output\_debian\_13\_template\_outputs) | Template ID, name, IP address and FQDN |
+| <a name="output_debian_13_vm_outputs"></a> [debian\_13\_vm\_outputs](#output\_debian\_13\_vm\_outputs) | VM ID, name, IP address and FQDN |
 <!-- END_TF_DOCS -->

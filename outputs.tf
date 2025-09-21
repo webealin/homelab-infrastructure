@@ -1,9 +1,11 @@
 # outputs.tf
 
 output "debian_13_template_outputs" {
-  value = module.debian_13_template
+  description = "Template ID, name, IP address and FQDN"
+  value       = module.debian_13_template
 }
 
 output "debian_13_vm_outputs" {
-  value = module.debian_13_template
+  description = "VM ID, name, IP address and FQDN"
+  value       = module.debian_13_vm
 }
