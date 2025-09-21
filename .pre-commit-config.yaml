@@ -1,3 +1,7 @@
+default_install_hook_types:
+  - pre-commit
+  - commit-msg
+
 repos:
   # General pre-commit hooks
   - repo: https://github.com/pre-commit/pre-commit-hooks
@@ -7,6 +11,14 @@ repos:
       - id: end-of-file-fixer
       - id: check-yaml
       - id: check-added-large-files
+      - id: check-shebang-scripts-are-executable
+
+  # Conventional commits
+  - repo: https://github.com/compilerla/conventional-pre-commit
+    rev: v4.2.0
+    hooks:
+      - id: conventional-pre-commit
+        stages: [commit-msg]
 
   # Terraform specific hooks
   - repo: https://github.com/antonbabenko/pre-commit-terraform
@@ -17,5 +29,5 @@ repos:
       - id: terraform_docs
       - id: terraform_tflint
       - id: terraform_trivy
-#      - id: terraform_checkov
+      - id: terraform_checkov
 #      - id: terrascan
