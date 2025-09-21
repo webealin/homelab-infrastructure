@@ -50,3 +50,15 @@ terraform:apply:
     - when: never
   dependencies:
     - terraform:plan
+
+trigger:downstream:
+  stage: apply
+  trigger:
+    project: homelab/configuration
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: on_success
+    - when: never
+  needs:
+    - job: terraform:apply
+      artifacts: false
