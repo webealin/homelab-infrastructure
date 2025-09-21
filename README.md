@@ -74,7 +74,7 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_dns_servers"></a> [dns\_servers](#input\_dns\_servers) | DNS servers | `list(string)` | <pre>[<br/>  "192.168.178.1"<br/>]</pre> | no |
-| <a name="input_domain"></a> [domain](#input\_domain) | Domain name | `string` | `"example.com"` | no |
+| <a name="input_domain"></a> [domain](#input\_domain) | Domain name | `string` | `"webernet-online.de"` | no |
 | <a name="input_gateway"></a> [gateway](#input\_gateway) | Network gateway | `string` | `"192.168.178.1"` | no |
 | <a name="input_local_admin_password_hash"></a> [local\_admin\_password\_hash](#input\_local\_admin\_password\_hash) | Admin password hash | `string` | n/a | yes |
 | <a name="input_locale"></a> [locale](#input\_locale) | System locale | `string` | `"de_DE.UTF-8"` | no |

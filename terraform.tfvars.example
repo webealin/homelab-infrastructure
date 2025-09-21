@@ -1,5 +1,4 @@
 pve_password = "my-secret-password"
-domain = webernet-online.de
 # Password for root, local admin and ansible service account is 'test'
 # the password hash is created by: mkpasswd -m SHA-512
 root_password_hash = "$6$p/hxxp/8FK1Jp9Ht$4jgbCv9KVDlxBYBvK.xhdU/.kCEHolqUjvGRXFZCr8CAvb7ybPYk8XsShhYKdwX4wOKLm0nmAwaIUzy5Z8mXe."

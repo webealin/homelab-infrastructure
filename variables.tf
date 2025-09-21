@@ -25,7 +25,7 @@ variable "pve_host" {
 variable "domain" {
   description = "Domain name"
   type        = string
-  default     = "example.com"
+  default     = "webernet-online.de"
 }
 variable "timezone" {
   description = "System timezone"
