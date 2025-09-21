@@ -25,7 +25,6 @@ terraform:validate:
 terraform:plan:
   stage: plan
   script:
-    - echo $TF_VAR_root_password_hash
     - tofu init
     - tofu plan -out=plan.tfplan
     - tofu show -json plan.tfplan > plan.json
