@@ -17,3 +17,4 @@ curl -L "$(curl -s https://api.github.com/repos/terraform-linters/tflint/release
 curl -L "$(curl -s https://api.github.com/repos/aquasecurity/trivy/releases/latest | grep -o -E -i -m 1 "https://.+?/trivy_.+?_Linux-64bit.tar.gz")" > trivy.tar.gz && tar -xzf trivy.tar.gz trivy && rm trivy.tar.gz && sudo mv trivy /usr/bin
 
 pre-commit install
+pre-commit autoupdate
