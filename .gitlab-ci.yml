@@ -1,0 +1,52 @@
+# .gitlab-ci.yml
+stages:
+  - validate
+  - plan
+  - apply
+
+default:
+  image:
+    name: ghcr.io/opentofu/opentofu:1.10.6
+    entrypoint: [""]
+
+variables:
+  TF_ROOT: ${CI_PROJECT_DIR}
+  TF_ADDRESS: ${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/terraform/state
+  TF_HTTP_USERNAME: gitlab-ci-token
+  TF_HTTP_PASSWORD: ${CI_JOB_TOKEN}
+
+terraform:validate:
+  stage: validate
+  script:
+    - tofu fmt -check
+    - tofu init
+    - tofu validate
+
+terraform:plan:
+  stage: plan
+  script:
+    - tofu init
+    - tofu plan -out=plan.tfplan
+    - tofu show -json plan.tfplan > plan.json
+  artifacts:
+    paths:
+      - plan.tfplan
+      - plan.json
+  rules:
+    - if: '$CI_MERGE_REQUEST_ID'
+      when: always
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: always
+    - when: never
+
+terraform:apply:
+  stage: apply
+  script:
+    - tofu init
+    - tofu apply plan.tfplan
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "main"'
+      when: manual
+    - when: never
+  dependencies:
+    - terraform:plan
