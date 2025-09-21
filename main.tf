@@ -1,9 +1,5 @@
 # main.tf
 
-data "local_file" "ssh_public_key" {
-  filename = pathexpand("~/.ssh/fido_gpg2.pub")
-}
-
 locals {
   common_config = {
     pve_host                  = var.pve_host,
@@ -15,7 +11,7 @@ locals {
     root_password_hash        = var.root_password_hash,
     local_admin_password_hash = var.local_admin_password_hash,
     svcansible_password_hash  = var.svcansible_password_hash,
-    svcansible_ssh_key        = data.local_file.ssh_public_key.content,
+    svcansible_ssh_key        = var.svcansible_ssh_key,
   }
 
   vms = {

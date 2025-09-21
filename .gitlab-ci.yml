@@ -26,7 +26,7 @@ terraform:plan:
   stage: plan
   script:
     - tofu init
-    - tofu plan -var-file="$TF_VARS_FILE" -out=plan.tfplan
+    - tofu plan -out=plan.tfplan
     - tofu show -json plan.tfplan > plan.json
   artifacts:
     paths:

@@ -52,9 +52,7 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_local"></a> [local](#provider\_local) | 2.5.3 |
+No providers.
 
 ## Modules
 
@@ -65,9 +63,7 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [local_file.ssh_public_key](https://registry.terraform.io/providers/hashicorp/local/2.5.3/docs/data-sources/file) | data source |
+No resources.
 
 ## Inputs
 
@@ -84,6 +80,7 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 | <a name="input_pve_username"></a> [pve\_username](#input\_pve\_username) | Username used to login to PVE API | `string` | `"root@pam"` | no |
 | <a name="input_root_password_hash"></a> [root\_password\_hash](#input\_root\_password\_hash) | Root password hash | `string` | n/a | yes |
 | <a name="input_svcansible_password_hash"></a> [svcansible\_password\_hash](#input\_svcansible\_password\_hash) | Ansible service account password hash | `string` | n/a | yes |
+| <a name="input_svcansible_ssh_key"></a> [svcansible\_ssh\_key](#input\_svcansible\_ssh\_key) | Ansible service account public SSH key | `string` | n/a | yes |
 | <a name="input_timezone"></a> [timezone](#input\_timezone) | System timezone | `string` | `"Europe/Berlin"` | no |
 
 ## Outputs

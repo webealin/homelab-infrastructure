@@ -58,6 +58,11 @@ variable "svcansible_password_hash" {
   type        = string
   sensitive   = true
 }
+variable "svcansible_ssh_key" {
+  description = "Ansible service account public SSH key"
+  type        = string
+  sensitive   = true
+}
 variable "local_admin_password_hash" {
   description = "Admin password hash"
   type        = string
