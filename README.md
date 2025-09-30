@@ -48,7 +48,7 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= v1.10.5 |
 | <a name="requirement_local"></a> [local](#requirement\_local) | 2.5.3 |
-| <a name="requirement_proxmox"></a> [proxmox](#requirement\_proxmox) | 0.82.1 |
+| <a name="requirement_proxmox"></a> [proxmox](#requirement\_proxmox) | 0.84.1 |
 
 ## Providers
 

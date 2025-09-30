@@ -4,13 +4,13 @@
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= v1.10.5 |
-| <a name="requirement_proxmox"></a> [proxmox](#requirement\_proxmox) | 0.82.1 |
+| <a name="requirement_proxmox"></a> [proxmox](#requirement\_proxmox) | 0.84.1 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_proxmox"></a> [proxmox](#provider\_proxmox) | 0.83.0 |
+| <a name="provider_proxmox"></a> [proxmox](#provider\_proxmox) | 0.84.1 |
 
 ## Modules
 
@@ -20,10 +20,10 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [proxmox_virtual_environment_download_file.debian_13_cloud_image](https://registry.terraform.io/providers/bpg/proxmox/0.82.1/docs/resources/virtual_environment_download_file) | resource |
-| [proxmox_virtual_environment_file.meta_data_config](https://registry.terraform.io/providers/bpg/proxmox/0.82.1/docs/resources/virtual_environment_file) | resource |
-| [proxmox_virtual_environment_file.user_data_config](https://registry.terraform.io/providers/bpg/proxmox/0.82.1/docs/resources/virtual_environment_file) | resource |
-| [proxmox_virtual_environment_vm.debian_13_vm](https://registry.terraform.io/providers/bpg/proxmox/0.82.1/docs/resources/virtual_environment_vm) | resource |
+| [proxmox_virtual_environment_download_file.debian_13_cloud_image](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_download_file) | resource |
+| [proxmox_virtual_environment_file.meta_data_config](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_file) | resource |
+| [proxmox_virtual_environment_file.user_data_config](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_file) | resource |
+| [proxmox_virtual_environment_vm.debian_13_vm](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_vm) | resource |
 
 ## Inputs
 
