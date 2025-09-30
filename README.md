@@ -69,7 +69,7 @@ No resources.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_dns_servers"></a> [dns\_servers](#input\_dns\_servers) | DNS servers | `list(string)` | <pre>[<br/>  "192.168.178.1"<br/>]</pre> | no |
+| <a name="input_dns_servers"></a> [dns\_servers](#input\_dns\_servers) | DNS servers | `list(string)` | <pre>[<br/>  "192.168.178.11",<br/>  "192.168.178.1"<br/>]</pre> | no |
 | <a name="input_domain"></a> [domain](#input\_domain) | Domain name | `string` | `"webernet-online.de"` | no |
 | <a name="input_gateway"></a> [gateway](#input\_gateway) | Network gateway | `string` | `"192.168.178.1"` | no |
 | <a name="input_local_admin_password_hash"></a> [local\_admin\_password\_hash](#input\_local\_admin\_password\_hash) | Admin password hash | `string` | n/a | yes |

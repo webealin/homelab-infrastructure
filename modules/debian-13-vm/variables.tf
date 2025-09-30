@@ -109,7 +109,7 @@ variable "gateway" {
 variable "dns_servers" {
   description = "DNS servers"
   type        = list(string)
-  default     = ["192.168.178.1"]
+  default     = ["192.168.178.11", "192.168.178.1"]
 }
 # Credentials
 variable "root_password_hash" {
