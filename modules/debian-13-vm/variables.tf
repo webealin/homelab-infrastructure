@@ -35,6 +35,12 @@ variable "template_vm_id" {
 }
 
 # VM specific variables
+variable "vm_id" {
+  description = "ID of the VM"
+  type        = string
+  default     = null
+}
+
 variable "vm_name" {
   description = "Name of the VM"
   type        = string

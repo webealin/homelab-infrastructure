@@ -15,8 +15,8 @@ locals {
   }
 
   vms = {
-    "sldocker01h" = { ip_address = "192.168.178.11", cpu_cores = 4, memory = 4096, data_disk_size = 30 }
-    "sldocker02h" = { ip_address = "192.168.178.12", cpu_cores = 4, memory = 4096, data_disk_size = 30 }
+    "sldocker01h" = { id = 101, ip_address = "192.168.178.11", cpu_cores = 4, memory = 4096, data_disk_size = 30 }
+    "sldocker02h" = { id = 102, ip_address = "192.168.178.12", cpu_cores = 4, memory = 4096, data_disk_size = 30 }
   }
 }
 
@@ -30,6 +30,7 @@ module "debian_13_template" {
   create_user_data   = true
 
   # template specific config
+  vm_id     = 1000
   vm_name   = "debian-13-template"
   cpu_cores = 2
   memory    = 2048
@@ -63,6 +64,7 @@ module "debian_13_vm" {
   user_data_file_id = module.debian_13_template.user_data_file_id
 
   # VM specific config
+  vm_id          = each.value.id
   vm_name        = each.key
   ip_address     = each.value.ip_address
   cpu_cores      = each.value.cpu_cores

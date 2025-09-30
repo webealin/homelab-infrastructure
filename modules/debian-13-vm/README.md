@@ -52,6 +52,7 @@ No modules.
 | <a name="input_template_vm_id"></a> [template\_vm\_id](#input\_template\_vm\_id) | Existing template VM ID to clone from | `number` | `null` | no |
 | <a name="input_timezone"></a> [timezone](#input\_timezone) | System timezone | `string` | `"Europe/Berlin"` | no |
 | <a name="input_user_data_file_id"></a> [user\_data\_file\_id](#input\_user\_data\_file\_id) | Existing user\_data file ID to use | `string` | `null` | no |
+| <a name="input_vm_id"></a> [vm\_id](#input\_vm\_id) | ID of the VM | `string` | `null` | no |
 | <a name="input_vm_name"></a> [vm\_name](#input\_vm\_name) | Name of the VM | `string` | n/a | yes |
 
 ## Outputs

@@ -55,6 +55,7 @@ resource "proxmox_virtual_environment_file" "meta_data_config" {
 
 # Debian 13 VM / Template
 resource "proxmox_virtual_environment_vm" "debian_13_vm" {
+  vm_id           = var.vm_id
   name            = var.vm_name
   node_name       = var.pve_host
   template        = var.is_template
