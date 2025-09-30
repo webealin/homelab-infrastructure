@@ -52,7 +52,9 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 
 ## Providers
 
-No providers.
+| Name | Version |
+|------|---------|
+| <a name="provider_proxmox"></a> [proxmox](#provider\_proxmox) | 0.84.1 |
 
 ## Modules
 
@@ -63,7 +65,11 @@ No providers.
 
 ## Resources
 
-No resources.
+| Name | Type |
+|------|------|
+| [proxmox_virtual_environment_role.terraform_role](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_role) | resource |
+| [proxmox_virtual_environment_user.terraform_user](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_user) | resource |
+| [proxmox_virtual_environment_user_token.terraform_token](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_user_token) | resource |
 
 ## Inputs
 
@@ -89,4 +95,8 @@ No resources.
 |------|-------------|
 | <a name="output_debian_13_template_outputs"></a> [debian\_13\_template\_outputs](#output\_debian\_13\_template\_outputs) | Template ID, name, IP address and FQDN |
 | <a name="output_debian_13_vm_outputs"></a> [debian\_13\_vm\_outputs](#output\_debian\_13\_vm\_outputs) | VM ID, name, IP address and FQDN |
+| <a name="output_terraform_role_id"></a> [terraform\_role\_id](#output\_terraform\_role\_id) | Terraform Role ID |
+| <a name="output_terraform_token_id"></a> [terraform\_token\_id](#output\_terraform\_token\_id) | Terraform Token ID |
+| <a name="output_terraform_token_value"></a> [terraform\_token\_value](#output\_terraform\_token\_value) | Terraform Token value |
+| <a name="output_terraform_user_id"></a> [terraform\_user\_id](#output\_terraform\_user\_id) | Terraform User ID |
 <!-- END_TF_DOCS -->
