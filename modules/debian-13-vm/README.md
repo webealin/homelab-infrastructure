@@ -35,7 +35,7 @@ No modules.
 | <a name="input_create_user_data"></a> [create\_user\_data](#input\_create\_user\_data) | Whether to create the user\_data config | `bool` | `false` | no |
 | <a name="input_data_datastore_id"></a> [data\_datastore\_id](#input\_data\_datastore\_id) | Datastore id to store additional data disk on | `string` | `null` | no |
 | <a name="input_data_disk_size"></a> [data\_disk\_size](#input\_data\_disk\_size) | Size of additional data disk in GB | `number` | `null` | no |
-| <a name="input_disk_size"></a> [disk\_size](#input\_disk\_size) | OS Disk size in GB | `number` | `10` | no |
+| <a name="input_disk_size"></a> [disk\_size](#input\_disk\_size) | OS Disk size in GB | `number` | `8` | no |
 | <a name="input_dns_servers"></a> [dns\_servers](#input\_dns\_servers) | DNS servers | `list(string)` | <pre>[<br/>  "192.168.178.1"<br/>]</pre> | no |
 | <a name="input_domain"></a> [domain](#input\_domain) | Domain name | `string` | `"example.com"` | no |
 | <a name="input_gateway"></a> [gateway](#input\_gateway) | Network gateway | `string` | `"192.168.178.1"` | no |

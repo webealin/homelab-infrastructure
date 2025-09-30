@@ -72,7 +72,7 @@ variable "memory" {
 variable "disk_size" {
   description = "OS Disk size in GB"
   type        = number
-  default     = 10
+  default     = 8
 }
 variable "data_disk_size" {
   description = "Size of additional data disk in GB"

@@ -33,7 +33,7 @@ module "debian_13_template" {
   vm_name   = "debian-13-template"
   cpu_cores = 2
   memory    = 2048
-  disk_size = 10
+  disk_size = 8
 
   # common config
   pve_host                  = local.common_config.pve_host
