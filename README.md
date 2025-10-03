@@ -60,6 +60,7 @@ No providers.
 |------|--------|---------|
 | <a name="module_debian_13_template"></a> [debian\_13\_template](#module\_debian\_13\_template) | ./modules/debian-13-vm | n/a |
 | <a name="module_debian_13_vm"></a> [debian\_13\_vm](#module\_debian\_13\_vm) | ./modules/debian-13-vm | n/a |
+| <a name="module_proxmox_apt_repositories"></a> [proxmox\_apt\_repositories](#module\_proxmox\_apt\_repositories) | ./modules/proxmox-repositories | n/a |
 | <a name="module_terraform_access_token"></a> [terraform\_access\_token](#module\_terraform\_access\_token) | ./modules/terraform-access-token | n/a |
 
 ## Resources
@@ -90,5 +91,6 @@ No resources.
 |------|-------------|
 | <a name="output_debian_13_template_outputs"></a> [debian\_13\_template\_outputs](#output\_debian\_13\_template\_outputs) | Template ID, name, IP address and FQDN |
 | <a name="output_debian_13_vm_outputs"></a> [debian\_13\_vm\_outputs](#output\_debian\_13\_vm\_outputs) | VM ID, name, IP address and FQDN |
+| <a name="output_proxmox_apt_repositories_output"></a> [proxmox\_apt\_repositories\_output](#output\_proxmox\_apt\_repositories\_output) | The status of all repositories on the node |
 | <a name="output_terraform_access_token_output"></a> [terraform\_access\_token\_output](#output\_terraform\_access\_token\_output) | Terraform Role ID, User ID and access token |
 <!-- END_TF_DOCS -->

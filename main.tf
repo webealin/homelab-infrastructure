@@ -20,6 +20,12 @@ locals {
   }
 }
 
+# manage apt repositories
+module "proxmox_apt_repositories" {
+  source   = "./modules/proxmox-repositories"
+  pve_node = var.pve_host
+}
+
 # manage terraform user and access token for proxmox
 module "terraform_access_token" {
   source             = "./modules/terraform-access-token"
