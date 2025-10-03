@@ -52,9 +52,7 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 
 ## Providers
 
-| Name | Version |
-|------|---------|
-| <a name="provider_proxmox"></a> [proxmox](#provider\_proxmox) | 0.84.1 |
+No providers.
 
 ## Modules
 
@@ -62,14 +60,11 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 |------|--------|---------|
 | <a name="module_debian_13_template"></a> [debian\_13\_template](#module\_debian\_13\_template) | ./modules/debian-13-vm | n/a |
 | <a name="module_debian_13_vm"></a> [debian\_13\_vm](#module\_debian\_13\_vm) | ./modules/debian-13-vm | n/a |
+| <a name="module_terraform_access_token"></a> [terraform\_access\_token](#module\_terraform\_access\_token) | ./modules/terraform-access-token | n/a |
 
 ## Resources
 
-| Name | Type |
-|------|------|
-| [proxmox_virtual_environment_role.terraform_role](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_role) | resource |
-| [proxmox_virtual_environment_user.terraform_user](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_user) | resource |
-| [proxmox_virtual_environment_user_token.terraform_token](https://registry.terraform.io/providers/bpg/proxmox/0.84.1/docs/resources/virtual_environment_user_token) | resource |
+No resources.
 
 ## Inputs
 
@@ -95,8 +90,5 @@ Terragrunt: A thin wrapper that provides extra tools for keeping your configurat
 |------|-------------|
 | <a name="output_debian_13_template_outputs"></a> [debian\_13\_template\_outputs](#output\_debian\_13\_template\_outputs) | Template ID, name, IP address and FQDN |
 | <a name="output_debian_13_vm_outputs"></a> [debian\_13\_vm\_outputs](#output\_debian\_13\_vm\_outputs) | VM ID, name, IP address and FQDN |
-| <a name="output_terraform_role_id"></a> [terraform\_role\_id](#output\_terraform\_role\_id) | Terraform Role ID |
-| <a name="output_terraform_token_id"></a> [terraform\_token\_id](#output\_terraform\_token\_id) | Terraform Token ID |
-| <a name="output_terraform_token_value"></a> [terraform\_token\_value](#output\_terraform\_token\_value) | Terraform Token value |
-| <a name="output_terraform_user_id"></a> [terraform\_user\_id](#output\_terraform\_user\_id) | Terraform User ID |
+| <a name="output_terraform_access_token_output"></a> [terraform\_access\_token\_output](#output\_terraform\_access\_token\_output) | Terraform Role ID, User ID and access token |
 <!-- END_TF_DOCS -->
