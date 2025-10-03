@@ -14,7 +14,24 @@ variable "pve_username" {
 variable "pve_password" {
   description = "Password used to login to PVE API"
   type        = string
+  default     = null
   sensitive   = true
+}
+variable "pve_api_token" {
+  description = "Token used to login to PVE API"
+  type        = string
+  default     = null
+  sensitive   = true
+}
+variable "pve_ssh_key" {
+  description = "SSH key file path to use for login to the PVE host"
+  type        = string
+  default     = "~/.ssh/id_rsa"
+}
+variable "pve_ssh_port" {
+  description = "SSH port on the PVE host"
+  type        = number
+  default     = 22
 }
 # Globals
 variable "pve_host" {

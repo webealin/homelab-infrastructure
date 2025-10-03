@@ -76,9 +76,12 @@ No resources.
 | <a name="input_gateway"></a> [gateway](#input\_gateway) | Network gateway | `string` | `"192.168.178.1"` | no |
 | <a name="input_local_admin_password_hash"></a> [local\_admin\_password\_hash](#input\_local\_admin\_password\_hash) | Admin password hash | `string` | n/a | yes |
 | <a name="input_locale"></a> [locale](#input\_locale) | System locale | `string` | `"de_DE.UTF-8"` | no |
+| <a name="input_pve_api_token"></a> [pve\_api\_token](#input\_pve\_api\_token) | Token used to login to PVE API | `string` | `null` | no |
 | <a name="input_pve_endpoint"></a> [pve\_endpoint](#input\_pve\_endpoint) | API Endpoint for Proxmox Virtual Environment | `string` | `"https://192.168.178.31:8006"` | no |
 | <a name="input_pve_host"></a> [pve\_host](#input\_pve\_host) | Proxmox host name | `string` | `"odin"` | no |
-| <a name="input_pve_password"></a> [pve\_password](#input\_pve\_password) | Password used to login to PVE API | `string` | n/a | yes |
+| <a name="input_pve_password"></a> [pve\_password](#input\_pve\_password) | Password used to login to PVE API | `string` | `null` | no |
+| <a name="input_pve_ssh_key"></a> [pve\_ssh\_key](#input\_pve\_ssh\_key) | SSH key file path to use for login to the PVE host | `string` | `"~/.ssh/id_rsa"` | no |
+| <a name="input_pve_ssh_port"></a> [pve\_ssh\_port](#input\_pve\_ssh\_port) | SSH port on the PVE host | `number` | `22` | no |
 | <a name="input_pve_username"></a> [pve\_username](#input\_pve\_username) | Username used to login to PVE API | `string` | `"root@pam"` | no |
 | <a name="input_root_password_hash"></a> [root\_password\_hash](#input\_root\_password\_hash) | Root password hash | `string` | n/a | yes |
 | <a name="input_svcansible_password_hash"></a> [svcansible\_password\_hash](#input\_svcansible\_password\_hash) | Ansible service account password hash | `string` | n/a | yes |
