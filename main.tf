@@ -82,7 +82,7 @@ module "debian_13_vm" {
   ip_address     = each.value.ip_address
   cpu_cores      = each.value.cpu_cores
   memory         = each.value.memory
-  data_disk_size = each.value.data_disk_size
+  data_disk_size = contains(keys(each.value), "data_disk_size") ? each.value.data_disk_size : null
 
   # common config
   pve_host                  = local.common_config.pve_host
