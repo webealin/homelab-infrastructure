@@ -42,6 +42,7 @@ terraform:plan:
 terraform:apply:
   stage: apply
   script:
+    - export PROXMOX_VE_SSH_PRIVATE_KEY=$(echo "$TERRAFORM_SSH_KEY" | base64 -d)
     - tofu init
     - tofu apply plan.tfplan
   rules:
