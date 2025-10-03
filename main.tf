@@ -15,8 +15,8 @@ locals {
   }
 
   vms = {
-    "sldocker01h" = { id = 101, ip_address = "192.168.178.11", cpu_cores = 4, memory = 8192, data_disk_size = 30 }
-    "sldocker02h" = { id = 102, ip_address = "192.168.178.12", cpu_cores = 2, memory = 4096, data_disk_size = 30 }
+    "sldocker01h" = { id = 101, ip_address = "192.168.178.11", cpu_cores = 2, memory = 4096, data_disk_size = 10 }
+    "sldocker02h" = { id = 102, ip_address = "192.168.178.12", cpu_cores = 4, memory = 10240, data_disk_size = 30 }
   }
 }
 
